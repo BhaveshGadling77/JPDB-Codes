@@ -1,15 +1,67 @@
-<!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<!doctype html>
+<html lang="en">
+  <link>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Management Form</title>
+    <link
+        href="index.css"
+        rel="stylesheet"
+      />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- JPDB -->
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+
+    <!-- JS File -->
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Project Management Form</h2>
+
+      <form id="projectForm">
+        <!-- Project ID -->
+        <div class="form-group">
+          <label for="projectId">Project ID</label>
+          <input type="text" id="projectId" autofocus />
+        </div>
+
+        <!-- Project Name -->
+        <div class="form-group">
+          <label for="projectName">Project Name</label>
+          <input type="text" id="projectName" disabled />
+        </div>
+
+        <!-- Assigned To -->
+        <div class="form-group">
+          <label for="assignedTo">Assigned To</label>
+          <input type="text" id="assignedTo" disabled />
+        </div>
+
+        <!-- Assignment Date -->
+        <div class="form-group">
+          <label for="assignmentDate">Assignment Date</label>
+          <input type="date" id="assignmentDate" disabled />
+        </div>
+
+        <!-- Deadline -->
+        <div class="form-group">
+          <label for="deadline">Deadline</label>
+          <input type="date" id="deadline" disabled />
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-group">
+          <button type="button" id="saveBtn" disabled>Save</button>
+
+          <button type="button" id="updateBtn" disabled>Update</button>
+
+          <button type="button" id="resetBtn" disabled>Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
